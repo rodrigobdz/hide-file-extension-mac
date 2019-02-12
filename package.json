@@ -1,0 +1,43 @@
+{
+  "name": "hide-file-extension-mac",
+  "version": "1.0.0",
+  "description": "Hide file extension from CLI for macOS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigobdz/hide-file-extension-mac"
+  },
+  "keywords": [
+    "cli-app",
+    "cli",
+    "macos",
+    "file-extension",
+    "file-system",
+    "xcode",
+    "hidden-file-extension",
+    "hidden-extension",
+    "folder",
+    "directory"
+  ],
+  "author": {
+    "name": "Rodrigo Bermudez Schettino",
+    "email": "rodrigobermudezschettino@gmail.com",
+    "url": "https://rodrigobdz.github.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodrigobdz/hide-file-extension-mac/issues"
+  },
+  "homepage": "https://github.com/rodrigobdz/hide-file-extension-mac#readme",
+  "dependencies": {
+    "meow": "^5.0.0"
+  },
+  "devDependencies": {
+    "ava": "^1.2.1",
+    "tempy": "^0.2.1",
+    "xo": "^0.24.0"
+  }
+}
