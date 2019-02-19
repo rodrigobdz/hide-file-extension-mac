@@ -1,9 +1,32 @@
 'use strict';
+const {exec} = require('child_process');
 
-module.exports = (input, options = {}) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
+module.exports = (file = '', options = {show: false}) => {
+	if (file.length === 0) {
+		console.error('Specify at least one path');
+		return false;
 	}
 
-	return input + ' & ' + (options.postfix || 'rainbows');
+	if (typeof options.show !== 'boolean') {
+		throw new TypeError(`Expected a boolean, got ${typeof options.show}`);
+	}
+
+	const hideExtension = options.show ? 'e' : 'E';
+
+	exec(`SetFile -a ${hideExtension} ${file}`, (err, stdout, stderr) => {
+		if (err) {
+			console.log(err);
+			return false;
+		}
+
+		if (stdout) {
+			console.log(`stdout: ${stdout}`);
+		}
+
+		if (stderr) {
+			console.log(`stderr: ${stderr}`);
+		}
+	});
+
+	return true;
 };

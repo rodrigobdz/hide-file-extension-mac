@@ -3,18 +3,26 @@
 const meow = require('meow');
 const hideFileExtensionMac = require('.');
 
-const cli = meow(`
+const cli = meow(
+	`
 	Usage
-	  $ hide-file-extension-mac [input]
+	  $ hide-extension <file>
 
 	Options
-	  --foo  Lorem ipsum [Default: false]
+	  --show, -s  Show extensions
 
 	Examples
-	  $ hide-file-extension-mac
-	  unicorns & rainbows
-	  $ hide-file-extension-mac ponies
-	  ponies & rainbows
-`);
+	  $ hide-extension --show ~/Downloads
+`,
+	{
+		flags: {
+			show: {
+				type: 'boolean',
+				alias: 's'
+			}
+		}
+	}
+);
 
-console.log(hideFileExtensionMac(cli.input[0] || 'unicorns'));
+const {input: file} = cli;
+hideFileExtensionMac(file, {show: cli.flags.show});
