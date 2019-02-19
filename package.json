@@ -13,6 +13,9 @@
 	"engines": {
 		"node": ">=6"
 	},
+	"os": [
+		"darwin"
+	],
 	"scripts": {
 		"test": "xo && ava"
 	},
