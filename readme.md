@@ -1,24 +1,31 @@
-# hide-file-extension-mac [![Build Status](https://travis-ci.com/rodrigobdz/hide-file-extension-mac.svg?branch=master)](https://travis-ci.com/rodrigobdz/hide-file-extension-mac)
+# 📄 Hide File Extension 🍎
 
 > Toggle file extension visibility from CLI for macOS
 
+## Requirements
+
+- Xcode Command-Line Tools
+- Node
 
 ## Install
 
-```
+```sh
 $ npm install hide-file-extension-mac
 ```
-
 
 ## Usage
 
 ```js
-const hideFileExtensionMac = require('hide-file-extension-mac');
+const hideFileExtensionMac = require("hide-file-extension-mac");
 
-hideFileExtensionMac('unicorns');
-//=> 'unicorns & rainbows'
+// foo.txt
+hideFileExtensionMac("foo.txt");
+//=> 'foo'
+
+// foo
+hideFileExtensionMac("foo.txt", { show: true });
+//=> 'foo.txt'
 ```
-
 
 ## API
 
@@ -28,43 +35,41 @@ hideFileExtensionMac('unicorns');
 
 Type: `string`
 
-Lorem ipsum.
+Path to file.
 
 #### options
 
 Type: `Object`
 
-##### foo
+##### show
 
 Type: `boolean`<br>
 Default: `false`
 
-Lorem ipsum.
-
+Flag to show or hide file extension.
 
 ## CLI
 
-```
+```sh
 $ npm install --global hide-file-extension-mac
 ```
 
-```
+```sh
 $ hide-file-extension-mac --help
 
   Usage
     hide-file-extension-mac [input]
 
   Options
-    --foo  Lorem ipsum [Default: false]
+    --show, -s  Show extensions [Default: false]
 
   Examples
-    $ hide-file-extension-mac
-    unicorns & rainbows
-    $ hide-file-extension-mac ponies
-    ponies & rainbows
+    $ hide-file-extension-mac --show foo.txt
+    # foo.txt
+    $ hide-file-extension-mac foo.txt
+    # foo
 ```
-
 
 ## License
 
-MIT © [Rodrigo Bermudez Schettino](http://rodrigobdz.github.io)
+[MIT](license) © [Rodrigo Bermudez Schettino](http://rodrigobdz.github.io)

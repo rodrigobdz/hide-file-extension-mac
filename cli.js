@@ -6,13 +6,14 @@ const hideFileExtensionMac = require('.');
 const cli = meow(
 	`
 	Usage
-	  $ hide-extension <file>
+	  $ hide-file-extension-mac <file>
 
 	Options
 	  --show, -s  Show extensions
 
 	Examples
-	  $ hide-extension --show ~/Downloads
+		$ hide-file-extension-mac --show foo.txt
+		$ hide-file-extension-mac foo.txt
 `,
 	{
 		flags: {
