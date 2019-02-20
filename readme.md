@@ -1,4 +1,4 @@
-# 📄 Hide File Extension 🍎
+# 📄 Hide File Extension 🍎 ![Build status](https://travis-ci.org/rodrigobdz/hide-file-extension-mac.svg?branch=master)
 
 > Toggle file extension visibility from CLI for macOS
 
