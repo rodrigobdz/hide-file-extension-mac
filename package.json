@@ -26,7 +26,13 @@
 	"keywords": [
 		"cli-app",
 		"cli",
-		""
+		"file-extension",
+		"toggle",
+		"command-line",
+		"finder",
+		"file-attributes",
+		"terminal",
+		"file-information"
 	],
 	"dependencies": {
 		"meow": "^5.0.0"
