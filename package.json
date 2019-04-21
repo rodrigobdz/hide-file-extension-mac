@@ -35,7 +35,8 @@
 		"file-information"
 	],
 	"dependencies": {
-		"meow": "^5.0.0"
+		"meow": "^5.0.0",
+		"update-notifier": "^2.5.0"
 	},
 	"devDependencies": {
 		"ava": "^1.4.1",

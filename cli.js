@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 'use strict';
+const updateNotifier = require('update-notifier');
 const meow = require('meow');
 const hideFileExtensionMac = require('.');
 
@@ -24,6 +25,8 @@ const cli = meow(
 		}
 	}
 );
+
+updateNotifier({pkg: cli.pkg}).notify();
 
 const {input: file} = cli;
 hideFileExtensionMac(file, {show: cli.flags.show});

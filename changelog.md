@@ -16,6 +16,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2019-04-21
+
+### Added
+
+- Include [update-notifier](https://github.com/yeoman/update-notifier) to inform users about package updates.
+
 ## [1.0.1] - 2019-04-21
 
 ### Added
@@ -34,6 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Toggle file extension visibility from CLI for macOS
 
-[unreleased]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/v1.0.1...HEAD
+[unreleased]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/d382a452d0be4c36f6a217e87cad4c652311d406...v1.0.0
