@@ -15,16 +15,16 @@ module.exports = (file = '', options = {show: false}) => {
 
 	exec(`SetFile -a ${hideExtension} ${file}`, (err, stdout, stderr) => {
 		if (err) {
-			console.log(err);
+			console.error(err);
 			return false;
 		}
 
 		if (stdout) {
-			console.log(`stdout: ${stdout}`);
+			console.log(stdout);
 		}
 
 		if (stderr) {
-			console.log(`stderr: ${stderr}`);
+			console.error(stderr);
 		}
 	});
 

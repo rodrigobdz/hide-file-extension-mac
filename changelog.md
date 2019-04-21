@@ -16,19 +16,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-04-21
+
 ### Added
 
-- Initial changelog.
+- Init changelog
 
 ### Changed
 
-- Improve npm keywords.
+- Improve npm keywords
+- Improve stdout and stderr logging
 
 ## [1.0.0] - 2019-02-19
 
 ### Added
 
-- Toggle file extension visibility from CLI for macOS.
+- Toggle file extension visibility from CLI for macOS
 
-[unreleased]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/rodrigobdz/hide-file-extension-mac/compare/d382a452d0be4c36f6a217e87cad4c652311d406...v1.0.0
