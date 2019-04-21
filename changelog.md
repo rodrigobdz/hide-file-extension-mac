@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Improve npm keywords
 - Improve stdout and stderr logging
+- Updated dependencies
 
 ## [1.0.0] - 2019-02-19
 
