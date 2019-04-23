@@ -2,11 +2,6 @@
 const {exec} = require('child_process');
 
 module.exports = (file = '', options = {show: false}) => {
-	if (file.length === 0) {
-		console.error('Specify at least one path');
-		return false;
-	}
-
 	if (typeof options.show !== 'boolean') {
 		throw new TypeError(`Expected a boolean, got ${typeof options.show}`);
 	}

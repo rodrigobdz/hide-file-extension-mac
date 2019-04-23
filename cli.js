@@ -29,4 +29,10 @@ const cli = meow(
 updateNotifier({pkg: cli.pkg}).notify();
 
 const {input: file} = cli;
+
+if (file.length === 0) {
+	console.error('Specify at least one path');
+	process.exit(1);
+}
+
 hideFileExtensionMac(file, {show: cli.flags.show});
