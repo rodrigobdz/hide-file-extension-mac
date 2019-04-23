@@ -35,4 +35,5 @@ if (file.length === 0) {
 	process.exit(1);
 }
 
-hideFileExtensionMac(file, {show: cli.flags.show});
+const result = hideFileExtensionMac(file, {show: cli.flags.show}) ? 0 : 1;
+process.exit(result);
