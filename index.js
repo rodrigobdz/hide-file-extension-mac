@@ -1,7 +1,11 @@
 'use strict';
 const {exec} = require('child_process');
 
-module.exports = (file = '', options = {show: false}) => {
+module.exports = (file, options = {show: false}) => {
+	if (!file) {
+		return false;
+	}
+
 	if (typeof options.show !== 'boolean') {
 		throw new TypeError(`Expected a boolean, got ${typeof options.show}`);
 	}

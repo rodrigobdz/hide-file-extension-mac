@@ -19,5 +19,3 @@ test('checks type of show argument', t => {
 test('returns values', t => {
 	t.true(hideFileExtensionMac(t.context.file));
 });
-
-test.todo('test file extension functionality');
