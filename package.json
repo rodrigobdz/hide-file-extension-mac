@@ -1,6 +1,6 @@
 {
 	"name": "hide-file-extension-mac",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Toggle file extension visibility from CLI for macOS",
 	"license": "MIT",
 	"repository": "rodrigobdz/hide-file-extension-mac",
