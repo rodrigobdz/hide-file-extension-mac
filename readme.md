@@ -70,6 +70,10 @@ $ hide-file-extension-mac --help
     # foo
 ```
 
+## Credits
+
+* [generator-lnm](https://github.com/rodrigobdz/generator-lnm) - Awesome node module generator
+
 ## License
 
-[MIT](license) © [Rodrigo Bermudez Schettino](http://rodrigobdz.github.io)
+[MIT](license) © [Rodrigo Bermudez Schettino](https://rodrigobdz.github.io)

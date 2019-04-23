@@ -5,3 +5,5 @@ node_js:
   - '6'
 os:
   - osx
+after_script:
+  - './node_modules/.bin/nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
